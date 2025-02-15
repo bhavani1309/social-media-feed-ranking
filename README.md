@@ -35,6 +35,7 @@ A web application that ranks social media posts based on user interactions such 
 ## How the Scoring Works
    The score for each post is calculated using the following formula:
    score = (likes * 2) + (comments * 3) + (interactions * 4)
+   
    This score is then used to rank the posts, with the highest-scoring posts appearing first.
    
 ## Future Improvements

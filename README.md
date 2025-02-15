@@ -28,9 +28,6 @@ A web application that ranks social media posts based on user interactions such 
    
 ## Run the Flask application:
    python app.py
-   
-## Access the app in your browser at:
-   http://127.0.0.1:5000/
 
 ## How the Scoring Works
    The score for each post is calculated using the following formula:

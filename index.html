@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Feed</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Top Posts</h1>
+
+    <form action="/add_post" method="POST">
+        <input type="text" name="content" placeholder="Enter your post" required>
+        <input type="number" name="likes" placeholder="Likes" required>
+        <input type="number" name="comments" placeholder="Comments" required>
+        <input type="number" name="interactions" placeholder="Interactions" required>
+        <button type="submit">Post</button>
+    </form>
+
+    <div class="posts">
+        {% for post in posts %}
+        <div class="post">
+            <h3>{{ post['content'] }}</h3>  <!-- Post content -->
+            <p>Score: {{ (post['likes'] * 2) + (post['comments'] * 3) + (post['interactions'] * 4) }}</p>
+            <p>Likes: {{ post['likes'] }} | Comments: {{ post['comments'] }} | Interactions: {{ post['interactions'] }}</p>
+            <p>Posted on: {{ post['timestamp'] }}</p> <!-- Timestamp of post -->
+        </div>
+        {% endfor %}
+    </div>
+
+</body>
+</html>

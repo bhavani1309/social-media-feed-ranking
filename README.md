@@ -16,8 +16,8 @@ A web application that ranks social media posts based on user interactions such 
 
 ## How to Run the Project
 1. Clone this repository:
-   git clone https://github.com/git clone https://github.com/your-username/social-media-feed-ranking.git
-/social-media-feed-ranking.git
+   git clone https://github.com/bhavani1309/social-media-feed-ranking.git
+
 
 
 ## Navigate to the project directory:

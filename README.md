@@ -40,6 +40,5 @@ A web application that ranks social media posts based on user interactions such 
    Implement a more advanced scoring algorithm (e.g., incorporating post time, user reputation).
    Add a database to persist posts.
 
-
-
+## Bhavani Thantanapalli
 

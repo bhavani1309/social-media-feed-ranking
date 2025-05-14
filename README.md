@@ -41,4 +41,5 @@ A web application that ranks social media posts based on user interactions such 
    Add a database to persist posts.
 
 ## Bhavani Thantanapalli
+   Optimizing Social Content Delivery with Smart Feed Ranking
 
